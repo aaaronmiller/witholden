@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Withholden Homepage Designs</title>
+<meta name="description" content="Six homepage design directions for Withholden. Open any design full screen, then come back to compare.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Withholden homepage designs">
+<meta property="og:description" content="Six homepage directions to compare. Open any design full screen, then come back to the next.">
+<meta property="og:image" content="https://aaaronmiller.github.io/withholden-homepage-options/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#f4f1ea; --surface:#fffdf8; --ink:#17171a; --muted:#5d5a54; --line:#dcd6c9;
+  --accent:#b8560f; --accent-ink:#fff; --badge:#1f6b45; --badge-ink:#fff;
+  --shadow:0 1px 2px rgba(23,23,26,.06),0 12px 32px rgba(23,23,26,.10);
+  --frame:#e6e0d3; --dot:#c9c1b0;
+  --radius:18px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121214; --surface:#1b1b1f; --ink:#f2efe8; --muted:#a7a29a; --line:#2e2d32;
+    --accent:#ffad5c; --accent-ink:#1a1206; --badge:#4fcf8e; --badge-ink:#06180f;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px rgba(0,0,0,.45);
+    --frame:#2a2a2f; --dot:#45444b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121214; --surface:#1b1b1f; --ink:#f2efe8; --muted:#a7a29a; --line:#2e2d32;
+  --accent:#ffad5c; --accent-ink:#1a1206; --badge:#4fcf8e; --badge-ink:#06180f;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px rgba(0,0,0,.45);
+  --frame:#2a2a2f; --dot:#45444b;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:400 17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+@media (min-width:720px){.wrap{padding:0 40px}}
+
+header{padding:56px 0 24px}
+h1{font-size:clamp(34px,6vw,64px);line-height:1.02;letter-spacing:-.025em;margin:0 0 18px;font-weight:800;max-width:18ch}
+.lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:56ch;margin:0}
+.how{display:flex;flex-wrap:wrap;gap:10px 24px;margin:28px 0 0;padding:0;list-style:none;color:var(--muted);font-size:15px}
+.how li{display:flex;align-items:center;gap:10px}
+.how b{flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;
+  background:var(--ink);color:var(--bg);font-size:13px;font-weight:700}
+
+h2{font-size:clamp(22px,2.6vw,28px);letter-spacing:-.01em;margin:64px 0 6px}
+.section-note{color:var(--muted);margin:0 0 24px;max-width:62ch}
+
+.grid{display:grid;gap:28px}
+@media (min-width:900px){.grid{grid-template-columns:1fr 1fr;gap:36px}}
+
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s ease}
+@media (hover:hover) and (pointer:fine){
+  .card:hover{transform:translateY(-4px)}
+  .card:hover .open{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+}
+.stage{position:relative;padding:22px 22px 0;background:
+  radial-gradient(120% 80% at 0% 0%,color-mix(in oklab,var(--accent) 10%,transparent),transparent 60%)}
+.browser{border-radius:10px 10px 0 0;overflow:hidden;background:var(--frame);border:1px solid var(--line);border-bottom:0}
+.browser .bar{height:26px;display:flex;align-items:center;gap:6px;padding:0 10px}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:var(--dot)}
+.browser img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.phone{position:absolute;right:18px;bottom:-1px;width:21%;max-width:140px;min-width:84px;
+  border-radius:16px 16px 0 0;border:5px solid #0d0d10;border-bottom:0;overflow:hidden;
+  box-shadow:-10px 0 30px rgba(0,0,0,.25);background:#0d0d10}
+.phone img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;object-position:top}
+
+.body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:12px;flex:1;border-top:1px solid var(--line)}
+.title-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+h3{margin:0;font-size:24px;letter-spacing:-.015em}
+.badge{font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--badge);color:var(--badge-ink)}
+.desc{margin:0;color:var(--muted)}
+.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.open{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;text-decoration:none;
+  padding:11px 18px;border-radius:999px;border:1.5px solid var(--ink);transition:background .2s ease,color .2s ease,border-color .2s ease}
+/* the whole card is the link target */
+.open::after{content:"";position:absolute;inset:0;z-index:1}
+.open:focus-visible{outline:none}
+.card:has(.open:focus-visible){outline:3px solid var(--accent);outline-offset:3px}
+.modes{position:relative;z-index:2;display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--bg)}
+.modes button{font:inherit;font-size:14px;font-weight:600;border:0;background:transparent;color:var(--muted);
+  padding:6px 12px;border-radius:999px;cursor:pointer;min-height:32px}
+.modes button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.modes button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.modes-label{font-size:14px;color:var(--muted);position:relative;z-index:2}
+
+.small .phone{width:22%}
+.small h3{font-size:20px}
+
+footer{margin:80px 0 0;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer p{margin:0 0 6px;max-width:70ch}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Withholden homepage designs</h1>
+    <p class="lede">Six directions for the new homepage, each a working page built from the current site's copy, prices and FAQ. Open one, look around, then come back and try the next.</p>
+    <ol class="how">
+      <li><b>1</b><span>Click a design to open it full screen</span></li>
+      <li><b>2</b><span>Scroll it on desktop or phone</span></li>
+      <li><b>3</b><span>Tap <strong>&larr; All designs</strong> (bottom left) to come back</span></li>
+    </ol>
+  </header>
+
+  <main>
+    <h2>The four to choose from</h2>
+    <p class="section-note">The first two are our recommendations. Where a design has a light and a dark version, switch between them on its card.</p>
+
+    <div class="grid">
+      <article class="card" data-slug="night-meter-dash">
+        <div class="stage">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="assets/night-meter-dash/desktop.webp" width="1200" height="750" alt="Night Meter homepage on desktop: a night city behind a tilted phone showing a live tax meter" data-shot="desktop"></div>
+          <div class="phone"><img src="assets/night-meter-dash/mobile.webp" width="390" height="844" alt="Night Meter homepage on a phone" loading="lazy" data-shot="mobile"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>Night Meter</h3><span class="badge">Recommended</span></div>
+          <p class="desc">A night city behind a tilted phone with a live tax meter, ending on a sunrise. Dark, bold and premium.</p>
+          <div class="actions"><a class="open" href="designs/night-meter-dash/">Open design &rarr;</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-slug="night-shift-dusk">
+        <div class="stage">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="assets/night-shift-dusk/desktop.webp" width="1200" height="750" alt="Night Shift Dusk homepage on desktop: a drawn golden-hour highway" data-shot="desktop"></div>
+          <div class="phone"><img src="assets/night-shift-dusk/mobile.webp" width="375" height="812" alt="Night Shift Dusk homepage on a phone" loading="lazy" data-shot="mobile"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>Night Shift Dusk</h3><span class="badge">Recommended</span></div>
+          <p class="desc">A drawn golden-hour highway with a calm section rhythm. Warm and polished.</p>
+          <div class="actions">
+            <a class="open" href="designs/night-shift-dusk/">Open design &rarr;</a>
+            <div class="modes" role="group" aria-label="Preview mode"><button type="button" aria-pressed="true" data-mode="main">Dark</button><button type="button" aria-pressed="false" data-mode="alt">Light</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-slug="morning-ledger">
+        <div class="stage">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="assets/morning-ledger/desktop.webp" width="1200" height="750" alt="Morning Ledger homepage on desktop: mint ledger paper with serif figures" loading="lazy" data-shot="desktop"></div>
+          <div class="phone"><img src="assets/morning-ledger/mobile.webp" width="390" height="844" alt="Morning Ledger homepage on a phone" loading="lazy" data-shot="mobile"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>Morning Ledger</h3></div>
+          <p class="desc">Mint ledger paper, green and raspberry, serif figures and morning light. Light, calm, trustworthy money.</p>
+          <div class="actions">
+            <a class="open" href="designs/morning-ledger/">Open design &rarr;</a>
+            <div class="modes" role="group" aria-label="Preview mode"><button type="button" aria-pressed="true" data-mode="main">Light</button><button type="button" aria-pressed="false" data-mode="alt">Dark</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-slug="split-pop">
+        <div class="stage">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="assets/split-pop/desktop.webp" width="1200" height="750" alt="Split Pop homepage on desktop: hot pink and lime colour blocks with the app as the hero" loading="lazy" data-shot="desktop"></div>
+          <div class="phone"><img src="assets/split-pop/mobile.webp" width="375" height="812" alt="Split Pop homepage on a phone" loading="lazy" data-shot="mobile"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>Split Pop</h3></div>
+          <p class="desc">Hot pink, lime and aqua colour blocks, the app as the hero and a payout split slider. Loud, young and phone-first.</p>
+          <div class="actions">
+            <a class="open" href="designs/split-pop/">Open design &rarr;</a>
+            <div class="modes" role="group" aria-label="Preview mode"><button type="button" aria-pressed="true" data-mode="main">Light</button><button type="button" aria-pressed="false" data-mode="alt">Dark</button></div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <h2>Earlier explorations</h2>
+    <p class="section-note">Two earlier takes on the night-driving idea that led to the first two designs. Kept here for comparison.</p>
+
+    <div class="grid">
+      <article class="card small" data-slug="night-shift-route">
+        <div class="stage">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="assets/night-shift-route/desktop.webp" width="1200" height="750" alt="Night Shift Route homepage on desktop: a driver's-seat view of a wet street" loading="lazy" data-shot="desktop"></div>
+          <div class="phone"><img src="assets/night-shift-route/mobile.webp" width="375" height="812" alt="Night Shift Route homepage on a phone" loading="lazy" data-shot="mobile"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>Night Shift Route</h3></div>
+          <p class="desc">A driver's-seat view of a wet night street, with highway-sign section labels.</p>
+          <div class="actions">
+            <a class="open" href="designs/night-shift-route/">Open design &rarr;</a>
+            <div class="modes" role="group" aria-label="Preview mode"><button type="button" aria-pressed="true" data-mode="main">Light</button><button type="button" aria-pressed="false" data-mode="alt">Dark</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card small" data-slug="windshield-meter">
+        <div class="stage">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+            <img src="assets/windshield-meter/desktop.webp" width="1200" height="750" alt="Windshield Meter homepage on desktop: a slanted night-street photo beside the headline" loading="lazy" data-shot="desktop"></div>
+          <div class="phone"><img src="assets/windshield-meter/mobile.webp" width="375" height="812" alt="Windshield Meter homepage on a phone" loading="lazy" data-shot="mobile"></div>
+        </div>
+        <div class="body">
+          <div class="title-row"><h3>Windshield Meter</h3></div>
+          <p class="desc">A slanted night-street photo edged by a moving lane line, with sample payouts filling the balance.</p>
+          <div class="actions"><a class="open" href="designs/windshield-meter/">Open design &rarr;</a></div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>These are design proposals, not the live site. Buttons and links inside each design point at withholden.com.</p>
+    <p>Figures shown inside phone and account mock-ups are samples taken from the current site.</p>
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll('.card').forEach(function (card) {
+  var slug = card.dataset.slug;
+  card.querySelectorAll('.modes button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var alt = btn.dataset.mode === 'alt';
+      card.querySelectorAll('.modes button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      card.querySelectorAll('img[data-shot]').forEach(function (img) {
+        img.src = 'assets/' + slug + '/' + img.dataset.shot + (alt ? '-alt' : '') + '.webp';
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
