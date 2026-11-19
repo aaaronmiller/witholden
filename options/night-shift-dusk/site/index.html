@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Withholden: tax savings accounts for gig drivers</title>
+<meta name="description" content="Bookkeeping and tax prep for 1099 businesses. Withholden keeps the books, sets aside your tax savings as you earn, and helps you get ready for every filing and estimated-payment deadline. 30-day free trial.">
+<link rel="canonical" href="https://withholden.com/">
+<meta property="og:title" content="Withholden: tax savings accounts for gig drivers">
+<meta property="og:description" content="Clean books for 1099 taxes. Bookkeeping and tax prep for 1099 businesses, with a 30-day free trial.">
+<meta property="og:url" content="https://withholden.com/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#320d31">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/overpass-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+  /* Set theme before first paint to avoid a flash. */
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('wh-theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.classList.add('js');
+  })();
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top" data-nav>
+  <div class="nav__inner">
+    <a class="wordmark" href="https://withholden.com/" aria-label="withholden home">
+      <svg class="wordmark__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21 11 3h2l7 18z" class="mk-road"/><path d="M12 20v-3M12 14v-3M12 8V6" class="mk-lane"/></svg>
+      <span>with<b>holden</b></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#how-it-works" data-section-link="how-it-works">How it works</a>
+      <a href="#pricing" data-section-link="pricing">Pricing</a>
+      <a href="#faq" data-section-link="faq">FAQ</a>
+      <a href="https://withholden.com/guidelines">Tax guide</a>
+    </nav>
+
+    <div class="nav__tools">
+      <div class="lang" data-lang>
+        <button class="lang__btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-list" aria-label="Language: English">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.6 5.6 3.6 9S14.6 18.4 12 21M12 3c-2.6 2.6-3.6 5.6-3.6 9s1 6.4 3.6 9"/></svg>
+          <span data-lang-current>English</span><span class="lang__code" data-lang-code>EN</span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="lang__list" id="lang-list" role="listbox" aria-label="Choose language">
+          <li role="option" aria-selected="true" data-lang-option="en" tabindex="0"><span class="code">EN</span> English</li>
+          <li role="option" aria-selected="false" data-lang-option="pa" tabindex="0" lang="pa"><span class="code">PA</span> ਪੰਜਾਬੀ</li>
+          <li role="option" aria-selected="false" data-lang-option="bn" tabindex="0" lang="bn"><span class="code">BN</span> বাংলা</li>
+          <li role="option" aria-selected="false" data-lang-option="th" tabindex="0" lang="th"><span class="code">TH</span> ไทย</li>
+          <li role="option" aria-selected="false" data-lang-option="es" tabindex="0" lang="es"><span class="code">ES</span> Español</li>
+        </ul>
+      </div>
+
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+      </button>
+
+      <a class="btn btn--quiet nav__signin" href="https://withholden.com/sign-in">Sign in</a>
+      <a class="btn btn--amber btn--sm" href="https://withholden.com/sign-up">Start free</a>
+
+      <button class="icon-btn burger" type="button" data-burger aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <a href="#how-it-works" data-section-link="how-it-works">How it works</a>
+    <a href="#pricing" data-section-link="pricing">Pricing</a>
+    <a href="#faq" data-section-link="faq">FAQ</a>
+    <a href="https://withholden.com/guidelines">Tax guide</a>
+    <a href="https://withholden.com/sign-in">Sign in</a>
+    <a class="btn btn--amber" href="https://withholden.com/sign-up">Start free</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__scene" aria-hidden="true">
+    <div class="hero__road"></div>
+    <div class="hero__veil"></div>
+    <div class="hero__grain"></div>
+  </div>
+
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="hero__kicker">Bookkeeping and tax prep for 1099 businesses</p>
+      <h1 id="hero-title" class="hero__title">
+        <span class="line"><span>Clean books for</span></span>
+        <span class="line"><span>1099 taxes.</span></span>
+      </h1>
+      <p class="hero__lede">Your gig work is a sole-proprietor business. Withholden keeps the books, sets aside your tax savings as you earn, and helps you get ready for every filing and estimated-payment deadline.</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--amber btn--lg" href="https://withholden.com/sign-up">Start 30-day free trial</a>
+        <a class="btn btn--ghost btn--lg" href="https://withholden.com/sign-in">I have an account</a>
+      </div>
+
+      <ul class="checks" aria-label="Before you start">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>No card to start</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Bank-level encryption</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Powered by Stripe</li>
+      </ul>
+
+      <dl class="terms">
+        <div><dt>30 days</dt><dd>free trial</dd></div>
+        <div><dt>$8.99 / $15.99</dt><dd>monthly plans</dd></div>
+        <div><dt>1 tap</dt><dd>tax help</dd></div>
+      </dl>
+    </div>
+
+    <!-- Product mock: sample figures only -->
+    <figure class="meter" aria-label="Sample Withholden tax savings account">
+      <div class="meter__head">
+        <span class="meter__brand">with<b>holden</b></span>
+        <span class="meter__sample">Sample account</span>
+      </div>
+
+      <div class="meter__account">
+        <div class="meter__label">
+          <span>Tax savings account</span>
+          <span class="status">On track</span>
+        </div>
+        <p class="meter__total"><span data-count="3240.18">$3,240.18</span></p>
+        <div class="lane" role="img" aria-label="72% of your 2026 business tax plan">
+          <span class="lane__fill" style="--to:72%"></span>
+        </div>
+        <p class="meter__note">72% of your 2026 business tax plan</p>
+      </div>
+
+      <dl class="meter__pair">
+        <div><dt>Saved YTD</dt><dd>$4,120</dd></div>
+        <div><dt>Rate</dt><dd class="amber-num">22%</dd></div>
+      </dl>
+
+      <div class="meter__due">
+        <div>
+          <p class="meter__due-title">Next estimated payment</p>
+          <p class="meter__due-sub">Q2 support due June 15</p>
+        </div>
+        <p class="meter__due-amt">$1,125 ready</p>
+      </div>
+
+      <p class="meter__rowhead">Recent income</p>
+      <ul class="payouts">
+        <li style="--i:0;--cut:22%">
+          <span class="src" aria-hidden="true">U</span>
+          <span class="who"><b>Uber</b><small>1099 deposit</small></span>
+          <span class="amt"><b>$612.40</b><small>$135 saved</small></span>
+          <span class="split" aria-hidden="true"><i></i></span>
+        </li>
+        <li style="--i:1;--cut:22%">
+          <span class="src" aria-hidden="true">D</span>
+          <span class="who"><b>DoorDash</b><small>1099 deposit</small></span>
+          <span class="amt"><b>$284.10</b><small>$62 saved</small></span>
+          <span class="split" aria-hidden="true"><i></i></span>
+        </li>
+        <li style="--i:2;--cut:22%">
+          <span class="src" aria-hidden="true">L</span>
+          <span class="who"><b>Lyft</b><small>1099 deposit</small></span>
+          <span class="amt"><b>$198.75</b><small>$44 saved</small></span>
+          <span class="split" aria-hidden="true"><i></i></span>
+        </li>
+      </ul>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <ul class="markers" aria-label="Trust">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg>Powered by Stripe</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 17V10M10 17V10M14 17V10M18 17V10M3 10l9-6 9 6z"/></svg>Current IRS tax tables</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg>Registered &amp; bonded CA tax-prep support</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></svg>Cancel anytime</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem" id="problem" aria-labelledby="problem-title">
+  <div class="wrap problem__grid">
+    <div class="problem__intro reveal">
+      <p class="marker-label">The problem</p>
+      <h2 id="problem-title">1099 income makes you a business</h2>
+      <p class="lede">Withholden gives your sole-proprietor work a bookkeeping and tax-prep system, so tax season stops living in your head.</p>
+    </div>
+
+    <div class="payline reveal" role="img" aria-label="Diagram: a W-2 paycheck has taxes withheld for you; a gig payout lands whole, with the taxes on it still owed; with Withholden, your chosen percentage moves into a tax savings account.">
+      <div class="payline__row">
+        <span class="payline__name">W-2 paycheck</span>
+        <span class="bar"><i class="bar__keep"></i><i class="bar__held bar__held--hatch"></i></span>
+        <span class="payline__cap">Taxes withheld for you</span>
+      </div>
+      <div class="payline__row">
+        <span class="payline__name">Gig payout</span>
+        <span class="bar"><i class="bar__keep"></i><i class="bar__owed"></i></span>
+        <span class="payline__cap">Lands whole</span>
+      </div>
+      <div class="payline__row payline__row--wh">
+        <span class="payline__name">With Withholden</span>
+        <span class="bar"><i class="bar__keep"></i><i class="bar__held"></i></span>
+        <span class="payline__cap">Your percentage, set aside</span>
+      </div>
+    </div>
+
+    <div class="points">
+      <article class="point reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        <h3>You are the business</h3>
+        <p>The IRS generally treats 1099 self-employment income as sole-proprietor business income, with Schedule C records to keep.</p>
+      </article>
+      <article class="point reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M3 3l18 18"/></svg>
+        <h3>No payroll department</h3>
+        <p>A W-2 job withholds taxes for you. Gig payouts land whole, so bookkeeping and estimated-tax planning fall on you.</p>
+      </article>
+      <article class="point reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M8 2v4M16 2v4M4 10h16M9 15l2 2 4-4"/></svg>
+        <h3>Tax season becomes work</h3>
+        <p>Without ongoing books, deductions, and payment planning, filing season turns into a scramble through old payouts and receipts.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS + IN ACTION ============ -->
+<section class="how" id="how-it-works" aria-labelledby="how-title">
+  <div class="how__grain" aria-hidden="true"></div>
+  <div class="wrap how__grid">
+    <div class="how__route">
+      <p class="marker-label">How it works</p>
+      <h2 id="how-title" class="reveal">Bookkeeping and tax prep, funded as you earn</h2>
+      <p class="lede reveal">Four steps to set up, then your books stay organized and your tax savings account builds in the background. No spreadsheet scramble.</p>
+
+      <ol class="route" data-route>
+        <li class="route__line" aria-hidden="true"><span data-route-fill></span></li>
+        <li class="stop reveal-side">
+          <span class="stop__pin" aria-hidden="true">1</span>
+          <h3><span class="sr">Step 1:</span><span class="stop__step" aria-hidden="true">Step 1</span>Link your bank</h3>
+          <p>Securely connect the account your gig income lands in. Setup takes about two minutes.</p>
+        </li>
+        <li class="stop reveal-side">
+          <span class="stop__pin" aria-hidden="true">2</span>
+          <h3><span class="sr">Step 2:</span><span class="stop__step" aria-hidden="true">Step 2</span>Tag your 1099 business income</h3>
+          <p>Flag business deposits so your sole-proprietor books, estimated-tax plan, and filing prep stay organized.</p>
+        </li>
+        <li class="stop reveal-side">
+          <span class="stop__pin" aria-hidden="true">3</span>
+          <h3><span class="sr">Step 3:</span><span class="stop__step" aria-hidden="true">Step 3</span>Set aside taxes automatically</h3>
+          <p>Choose a percentage to move into a tax savings account powered by Stripe Treasury.</p>
+        </li>
+        <li class="stop reveal-side">
+          <span class="stop__pin" aria-hidden="true">4</span>
+          <h3><span class="sr">Step 4:</span><span class="stop__step" aria-hidden="true">Step 4</span>Stop tax panic</h3>
+          <p>At each deadline, review your books and use the account to help pay quarterly estimates.</p>
+        </li>
+      </ol>
+    </div>
+
+    <aside class="action" aria-labelledby="action-title">
+      <div class="action__inner">
+        <p class="marker-label marker-label--amber">See it in action</p>
+        <h2 id="action-title" class="reveal-blur">Your books and tax savings, building on autopilot</h2>
+        <p class="reveal-blur">Withholden turns every tagged payout into organized business records and progress toward filing support and estimated-tax payment help.</p>
+        <dl class="action__list">
+          <div class="reveal-blur">
+            <dt>Bookkeeping as you earn</dt>
+            <dd>Every tagged payout can feed your business books and move your chosen percentage into a tax savings account.</dd>
+          </div>
+          <div class="reveal-blur">
+            <dt>A reserve, not a reminder</dt>
+            <dd>A live progress bar shows how your tax savings account tracks against the estimated-tax plan for your 1099 business.</dd>
+          </div>
+          <div class="reveal-blur">
+            <dt>Deadline support</dt>
+            <dd>When estimates are due, use Withholden to prepare records, review the amount, and support the tax-payment workflow.</dd>
+          </div>
+        </dl>
+        <a class="btn btn--amber" href="https://withholden.com/sign-up">Try it free</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <div class="pricing__head">
+      <div class="reveal">
+        <p class="marker-label">Pricing</p>
+        <h2 id="pricing-title">Choose your tax support level.</h2>
+      </div>
+      <p class="lede reveal">Start with 30 days free. Tax savings transfers are always authorized by you and calculated separately from your subscription.</p>
+    </div>
+
+    <div class="plans">
+      <article class="plan plan--pro reveal-clip">
+        <header class="plan__head">
+          <p class="plan__tier">Core plan</p>
+          <h3>Withholden Pro</h3>
+          <p class="plan__price"><b>$8.99</b><span>/month</span></p>
+          <p class="plan__trial">30 days free, then $8.99/month.</p>
+        </header>
+        <p class="plan__desc">Bookkeeping, tax savings automation, quarterly payment support, and filing prep for drivers who want to stay organized.</p>
+        <ul class="plan__list">
+          <li>1099 business-income tagging and bookkeeping services</li>
+          <li>Driver-authorized tax savings percentage</li>
+          <li>Stripe Treasury-powered tax savings account</li>
+          <li>Estimated-tax planning from current IRS tables</li>
+          <li>Quarterly estimated-tax payment support</li>
+        </ul>
+        <a class="btn btn--amber" href="https://withholden.com/sign-up">Start Pro free</a>
+      </article>
+
+      <article class="plan plan--full reveal-clip">
+        <header class="plan__head">
+          <p class="plan__tier">Full service</p>
+          <h3>Hands Free Taxes</h3>
+          <p class="plan__price"><b>$15.99</b><span>/month</span></p>
+          <p class="plan__trial">30 days free, then $15.99/month.</p>
+        </header>
+        <p class="plan__desc">Everything in Pro, plus federal and state (if applicable) return preparation and estimated-payment support handled for you.</p>
+        <ul class="plan__list">
+          <li>Everything in Withholden Pro</li>
+          <li>Federal and state (if applicable) income tax return preparation</li>
+          <li>Quarterly estimated-tax payments sent for you</li>
+          <li>You review and approve each return before it is signed and e-filed</li>
+          <li>Cancel anytime, no hidden per-payout fees</li>
+        </ul>
+        <a class="btn btn--amber" href="https://withholden.com/sign-up">Start Hands Free Taxes free</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq__grid">
+    <div class="faq__side">
+      <p class="marker-label">FAQ</p>
+      <h2 id="faq-title" class="reveal">Questions, answered</h2>
+      <p class="faq__more reveal">Still curious? <a href="https://withholden.com/contact">Get in touch</a> or read the <a href="https://withholden.com/guidelines">IRS tax guide</a>.</p>
+    </div>
+
+    <div class="qa">
+      <article class="reveal">
+        <h3>Is this a bank account?</h3>
+        <p>Withholden is not a bank. The tax savings account is powered by Stripe Treasury; Withholden partners with Stripe Payments Company for money transmission services and account services with funds held at Fifth Third Bank, N.A., Member FDIC.</p>
+      </article>
+      <article class="reveal">
+        <h3>How does Withholden know which deposits are taxable?</h3>
+        <p>You tag your 1099 business income the first time it appears. After that, Withholden recognizes recurring gig sources so your sole-proprietor books and estimated-tax plan stay current.</p>
+      </article>
+      <article class="reveal">
+        <h3>How does Withholden use AI?</h3>
+        <p>Withholden is AI native — AI is built into how we do bookkeeping, recognize gig income, and keep deduction context current, not bolted on. It never acts alone: money moves only at your authorized percentage, tax guidance is reviewed under registered and bonded California tax preparers, and you approve anything that gets filed or paid.</p>
+      </article>
+      <article class="reveal">
+        <h3>What percentage is charged?</h3>
+        <p>You choose the tax savings percentage. We suggest a planning rate from current IRS tables for self-employment income, and you can adjust it as your business earnings change.</p>
+      </article>
+      <article class="reveal">
+        <h3>Is connecting my bank safe?</h3>
+        <p>Yes. Connections use bank-level encryption and are powered by Stripe, the same payments infrastructure trusted by millions of businesses. We never store your bank login.</p>
+      </article>
+      <article class="reveal">
+        <h3>Do I still have to file my taxes?</h3>
+        <p>Yes. Withholden provides bookkeeping, planning, filing-support, and payment-support workflows so taxes stop being a surprise, but you are still responsible for reviewing, authorizing, filing, and paying correctly.</p>
+      </article>
+      <article class="reveal">
+        <h3>What does it cost?</h3>
+        <p>Both subscriptions start with 30 days free. Withholden Pro is $8.99 per month, and Hands Free Taxes is $15.99 per month for full-service tax preparation and estimated-payment support. No per-payout fees. Cancel any time.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing" aria-labelledby="closing-title">
+  <div class="closing__scene" aria-hidden="true"></div>
+  <div class="wrap closing__grid">
+    <h2 id="closing-title" class="reveal-clip">Let your 1099 business run with books already in order.</h2>
+    <div class="closing__body reveal">
+      <p>Set your tax savings percentage once and let Withholden keep your bookkeeping, tax prep, and estimated-tax workflow moving.</p>
+      <div class="hero__actions">
+        <a class="btn btn--amber btn--lg" href="https://withholden.com/sign-up">Start 30-day free trial</a>
+        <a class="btn btn--ghost btn--lg" href="https://withholden.com/guidelines">Read the tax guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="wordmark" href="https://withholden.com/" aria-label="withholden home">
+          <svg class="wordmark__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21 11 3h2l7 18z" class="mk-road"/><path d="M12 20v-3M12 14v-3M12 8V6" class="mk-lane"/></svg>
+          <span>with<b>holden</b></span>
+        </a>
+        <p>Bookkeeping, tax savings, and filing support for rideshare and gig drivers running 1099 businesses.</p>
+        <a class="textlink" href="https://withholden.com/guidelines">Read the IRS tax guide <span aria-hidden="true">→</span></a>
+      </div>
+
+      <nav class="footer__col" aria-label="Product">
+        <h2>Product</h2>
+        <a href="https://withholden.com/guidelines">IRS tax guide</a>
+        <a href="https://withholden.com/sign-up">Start free trial</a>
+        <a href="https://withholden.com/sign-in">Sign in</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h2>Company</h2>
+        <a href="https://withholden.com/about">About</a>
+        <a href="https://withholden.com/contact">Contact</a>
+        <a href="https://withholden.com/investors">Investors</a>
+      </nav>
+      <nav class="footer__col" aria-label="Legal">
+        <h2>Legal</h2>
+        <a href="https://withholden.com/legal/privacy">Privacy Policy</a>
+        <a href="https://withholden.com/legal/terms">Terms of Service</a>
+        <a href="https://withholden.com/legal/disclosures">Treasury Disclosures</a>
+        <button type="button" class="linkbtn" data-cookie-open>Cookie preferences</button>
+        <button type="button" class="linkbtn" data-cookie-manage>Do Not Sell or Share My Personal Information</button>
+      </nav>
+    </div>
+
+    <div class="footer__langs" role="group" aria-label="Language">
+      <span class="footer__langs-label">Language</span>
+      <button type="button" class="langchip" data-lang-option="en" aria-pressed="true"><span class="code">EN</span> English</button>
+      <button type="button" class="langchip" data-lang-option="pa" aria-pressed="false" lang="pa"><span class="code">PA</span> ਪੰਜਾਬੀ</button>
+      <button type="button" class="langchip" data-lang-option="bn" aria-pressed="false" lang="bn"><span class="code">BN</span> বাংলা</button>
+      <button type="button" class="langchip" data-lang-option="th" aria-pressed="false" lang="th"><span class="code">TH</span> ไทย</button>
+      <button type="button" class="langchip" data-lang-option="es" aria-pressed="false" lang="es"><span class="code">ES</span> Español</button>
+    </div>
+
+    <div class="footer__legal">
+      <p>Withholden tax guidance is offered by registered and bonded preparers in the state of <a href="https://withholden.com/legal/terms#tax-preparer">California</a>. Operated by Withholden Inc, a Delaware C-Corporation. Estimates are guidance only and not legal advice. Estimates do not replace a personalized review of your specific tax situation.</p>
+      <p>Withholden is not a bank. Withholden partners with <a href="https://stripe.com" target="_blank" rel="noopener noreferrer">Stripe Payments Company<span class="sr"> (opens in a new tab)</span></a> for money transmission services and account services with funds held at Fifth Third Bank, N.A., member FDIC.</p>
+      <p class="footer__copy">© 2026 Withholden Inc. All rights reserved. <span class="sep" aria-hidden="true">/</span> 131 Continental Drive, Suite 305, Newark, Delaware 19713 <span class="sep" aria-hidden="true">/</span> <a href="tel:+18886763086">(888) 676-3086</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ COOKIE NOTICE ============ -->
+<div class="cookie" data-cookie role="region" aria-label="Cookie consent" hidden>
+  <p>We use necessary cookies to run Withholden, and optional analytics cookies only with your consent. We never sell your personal information. <a href="https://withholden.com/legal/privacy">Privacy Policy</a>.</p>
+  <div class="cookie__manage" data-cookie-panel hidden>
+    <label class="switch"><input type="checkbox" checked disabled> <span class="switch__ui" aria-hidden="true"></span> Necessary cookies</label>
+    <label class="switch"><input type="checkbox" data-cookie-analytics> <span class="switch__ui" aria-hidden="true"></span> Optional analytics cookies</label>
+  </div>
+  <div class="cookie__actions">
+    <button type="button" class="btn btn--quiet btn--sm" data-cookie-choice="reject">Reject all</button>
+    <button type="button" class="btn btn--quiet btn--sm" data-cookie-toggle>Manage</button>
+    <button type="button" class="btn btn--amber btn--sm" data-cookie-choice="accept">Accept all</button>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
