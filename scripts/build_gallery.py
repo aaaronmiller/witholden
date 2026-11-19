@@ -24,7 +24,7 @@ SLUGS = [
 HEAD_INJECT = '<meta name="robots" content="noindex, nofollow">\n'
 
 BACK_LINK = """
-<a href="../../" id="wh-gallery-back" aria-label="Back to all homepage designs">&larr; All designs</a>
+<a href="../../index.html" id="wh-gallery-back" aria-label="Back to all homepage designs">&larr; All designs</a>
 <style>
 #wh-gallery-back{position:fixed;left:16px;bottom:16px;z-index:2147483647;
 font:600 14px/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.01em;
